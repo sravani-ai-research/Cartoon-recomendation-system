@@ -1,0 +1,10 @@
+cartoons = ["Tom and Jerry", "Masha and the Bear", "Jackie Chan", "Little Krishna"]
+cartoon_type = ["funny", "comedy", "adventure", "adventure"]
+
+user_type = input("Enter the genre you like (funny/comedy/adventure): ")
+
+print("\nRecommended Cartoons:")
+
+for i in range(len(cartoons)):
+    if cartoon_type[i].lower() == user_type.lower():
+        print(cartoons[i])
